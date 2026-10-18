@@ -1,0 +1,209 @@
+HW3_EVAL_BEGIN {"policy_command": ["python3", "/opt/hw3/reference_demo/run_demo.py", "classical", "--world", "maze_a"], "sensor_stale_limit_wall_s": 3.0, "timeout_basis": "simulation", "timeout_sim_s": 300.0, "world": "maze_a"}
+COLOR red=225 green=210
+COLOR_ORDER green_side=-1
+STEP 1: pose=(-0.00,-4.40,1.57) waypoint=(-0.20,-3.90,1.55) free=1583 occupied=105
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 1.85, "elapsed_wall_s": 5.0, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.123, "clock": 0.0, "odom": 0.07, "scan": 0.192}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 3.842, "elapsed_wall_s": 10.002, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.354, "clock": 0.012, "odom": 0.071, "scan": 0.206}, "timeout_sim_s": 300.0}
+RESULT 1: OK pose=(-0.19,-3.90)
+COLOR red=0 green=272
+STEP 2: pose=(-0.19,-3.90,1.64) waypoint=(-0.40,-3.40,1.52) free=1770 occupied=117
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 5.592, "elapsed_wall_s": 15.007, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.693, "clock": 0.06, "odom": 0.079, "scan": 0.0}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 7.572, "elapsed_wall_s": 20.016, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.082, "clock": 0.036, "odom": 0.066, "scan": 0.176}, "timeout_sim_s": 300.0}
+RESULT 2: OK pose=(-0.40,-3.39)
+COLOR red=0 green=288
+STEP 3: pose=(-0.40,-3.39,1.61) waypoint=(-0.60,-2.90,1.49) free=1942 occupied=130
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 9.75, "elapsed_wall_s": 25.02, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.366, "clock": 0.064, "odom": 0.103, "scan": 0.169}, "timeout_sim_s": 300.0}
+RESULT 3: OK pose=(-0.59,-2.89)
+COLOR red=0 green=284
+STEP 4: pose=(-0.59,-2.89,1.58) waypoint=(-1.00,-2.40,1.42) free=2106 occupied=148
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 11.909, "elapsed_wall_s": 30.02, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.256, "clock": 0.0, "odom": 0.015, "scan": 0.109}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 13.846, "elapsed_wall_s": 35.02, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.064, "clock": 0.0, "odom": 0.012, "scan": 0.133}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 15.788, "elapsed_wall_s": 40.023, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.027, "clock": 0.004, "odom": 0.025, "scan": 0.09}, "timeout_sim_s": 300.0}
+RESULT 4: OK pose=(-1.00,-2.39)
+COLOR red=0 green=759
+GATE_CANDIDATE green=(-1.78,0.48) width=0.93
+GATE_CONFIRMED green=(-1.77,0.48) width=0.95 frames=2
+STEP 5: pose=(-1.00,-2.39,1.52) waypoint=(-0.40,-2.40,1.57) free=2440 occupied=193
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 17.838, "elapsed_wall_s": 45.023, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.854, "clock": 0.0, "odom": 0.047, "scan": 0.073}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 19.944, "elapsed_wall_s": 50.025, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.002, "clock": 0.01, "odom": 0.06, "scan": 0.193}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 21.718, "elapsed_wall_s": 55.028, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.155, "clock": 0.0, "odom": 0.082, "scan": 0.049}, "timeout_sim_s": 300.0}
+RESULT 5: OK pose=(-0.46,-2.38)
+COLOR red=0 green=0
+STEP 6: pose=(-0.46,-2.38,1.49) waypoint=(0.10,-2.40,1.57) free=2490 occupied=204
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 23.659, "elapsed_wall_s": 60.028, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.564, "clock": 0.0, "odom": 0.049, "scan": 0.225}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 25.854, "elapsed_wall_s": 65.035, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.292, "clock": 0.012, "odom": 0.032, "scan": 0.164}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 27.982, "elapsed_wall_s": 70.041, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.159, "clock": 0.011, "odom": 0.136, "scan": 0.052}, "timeout_sim_s": 300.0}
+RESULT 6: OK pose=(0.04,-2.38)
+COLOR red=0 green=0
+STEP 7: pose=(0.04,-2.37,1.49) waypoint=(0.40,-2.40,1.57) free=2610 occupied=231
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 30.067, "elapsed_wall_s": 75.041, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.059, "clock": 0.001, "odom": 0.021, "scan": 0.247}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 32.012, "elapsed_wall_s": 80.041, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.165, "clock": 0.001, "odom": 0.027, "scan": 0.033}, "timeout_sim_s": 300.0}
+RESULT 7: OK pose=(0.34,-2.37)
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 34.044, "elapsed_wall_s": 85.044, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.582, "clock": 0.0, "odom": 0.045, "scan": 0.151}, "timeout_sim_s": 300.0}
+COLOR red=500 green=78
+STEP 8: pose=(0.34,-2.37,1.48) waypoint=(0.60,-2.10,1.57) free=2754 occupied=261
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 36.15, "elapsed_wall_s": 90.046, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.22, "clock": 0.011, "odom": 0.025, "scan": 0.119}, "timeout_sim_s": 300.0}
+RESULT 8: OK pose=(0.54,-2.14)
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 38.261, "elapsed_wall_s": 95.046, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.2, "clock": 0.002, "odom": 0.025, "scan": 0.117}, "timeout_sim_s": 300.0}
+COLOR red=467 green=783
+STEP 9: pose=(0.54,-2.14,1.48) waypoint=(0.60,-1.60,1.57) free=2863 occupied=286
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 40.343, "elapsed_wall_s": 100.048, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.572, "clock": 0.002, "odom": 0.044, "scan": 0.076}, "timeout_sim_s": 300.0}
+RESULT 9: OK pose=(0.59,-1.65)
+COLOR red=60 green=570
+STEP 10: pose=(0.59,-1.65,1.48) waypoint=(0.60,-2.20,1.57) free=2979 occupied=305
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 42.601, "elapsed_wall_s": 105.048, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.015, "clock": 0.0, "odom": 0.055, "scan": 0.09}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 44.811, "elapsed_wall_s": 110.048, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.27, "clock": 0.0, "odom": 0.079, "scan": 0.031}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 46.776, "elapsed_wall_s": 115.057, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.122, "clock": 0.032, "odom": 0.088, "scan": 0.326}, "timeout_sim_s": 300.0}
+RESULT 10: OK pose=(0.59,-2.18)
+COLOR red=313 green=835
+STEP 11: pose=(0.59,-2.18,1.66) waypoint=(0.20,-2.70,1.57) free=2987 occupied=318
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 48.756, "elapsed_wall_s": 120.067, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.099, "clock": 0.011, "odom": 0.06, "scan": 0.157}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 50.651, "elapsed_wall_s": 125.068, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.035, "clock": 0.0, "odom": 0.039, "scan": 0.12}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 52.724, "elapsed_wall_s": 130.068, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.438, "clock": 0.0, "odom": 0.028, "scan": 0.139}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 54.725, "elapsed_wall_s": 135.068, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.149, "clock": 0.0, "odom": 0.029, "scan": 0.042}, "timeout_sim_s": 300.0}
+RESULT 11: OK pose=(0.18,-2.69)
+COLOR red=0 green=0
+STEP 12: pose=(0.18,-2.69,1.66) waypoint=(-0.20,-3.10,1.57) free=2988 occupied=322
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 56.619, "elapsed_wall_s": 140.068, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.908, "clock": 0.0, "odom": 0.01, "scan": 0.149}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 58.743, "elapsed_wall_s": 145.07, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.05, "clock": 0.0, "odom": 0.06, "scan": 0.151}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 60.782, "elapsed_wall_s": 150.071, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.411, "clock": 0.001, "odom": 0.084, "scan": 0.02}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 62.88, "elapsed_wall_s": 155.082, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.063, "clock": 0.024, "odom": 0.039, "scan": 0.255}, "timeout_sim_s": 300.0}
+RESULT 12: OK pose=(-0.22,-3.09)
+COLOR red=0 green=95
+STEP 13: pose=(-0.22,-3.09,1.66) waypoint=(-0.60,-3.50,1.57) free=2989 occupied=329
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 64.983, "elapsed_wall_s": 160.082, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.124, "clock": 0.0, "odom": 0.017, "scan": 0.019}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 66.983, "elapsed_wall_s": 165.088, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.394, "clock": 0.008, "odom": 0.011, "scan": 0.028}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 69.034, "elapsed_wall_s": 170.088, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.621, "clock": 0.0, "odom": 0.032, "scan": 0.15}, "timeout_sim_s": 300.0}
+RESULT 13: OK pose=(-0.62,-3.49)
+COLOR red=0 green=306
+STEP 14: pose=(-0.62,-3.49,1.66) waypoint=(-1.00,-3.90,1.57) free=2989 occupied=333
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 71.009, "elapsed_wall_s": 175.092, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.397, "clock": 0.0, "odom": 0.046, "scan": 0.033}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 72.986, "elapsed_wall_s": 180.092, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.425, "clock": 0.002, "odom": 0.083, "scan": 0.031}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 74.892, "elapsed_wall_s": 185.099, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.095, "clock": 0.01, "odom": 0.046, "scan": 0.0}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 76.942, "elapsed_wall_s": 190.108, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.261, "clock": 0.049, "odom": 0.107, "scan": 0.172}, "timeout_sim_s": 300.0}
+RESULT 14: OK pose=(-1.02,-3.89)
+COLOR red=0 green=179
+STEP 15: pose=(-1.02,-3.89,1.65) waypoint=(-1.30,-4.10,1.57) free=2989 occupied=339
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 78.943, "elapsed_wall_s": 195.11, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.127, "clock": 0.0, "odom": 0.096, "scan": 0.254}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 80.842, "elapsed_wall_s": 200.115, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.596, "clock": 0.072, "odom": 0.103, "scan": 0.243}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 82.842, "elapsed_wall_s": 205.125, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.362, "clock": 0.016, "odom": 0.061, "scan": 0.192}, "timeout_sim_s": 300.0}
+RESULT 15: OK pose=(-1.32,-4.09)
+COLOR red=0 green=0
+STEP 16: pose=(-1.32,-4.09,1.66) waypoint=(-1.90,-4.10,1.57) free=3019 occupied=346
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 84.947, "elapsed_wall_s": 210.125, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.006, "clock": 0.0, "odom": 0.066, "scan": 0.221}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 86.97, "elapsed_wall_s": 215.126, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.372, "clock": 0.054, "odom": 0.099, "scan": 0.157}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 89.113, "elapsed_wall_s": 220.128, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.31, "clock": 0.011, "odom": 0.0, "scan": 0.081}, "timeout_sim_s": 300.0}
+RESULT 16: OK pose=(-1.92,-4.09)
+COLOR red=0 green=240
+STEP 17: pose=(-1.92,-4.09,1.65) waypoint=(-2.20,-3.80,1.57) free=3062 occupied=351
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 91.26, "elapsed_wall_s": 225.13, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.127, "clock": 0.074, "odom": 0.082, "scan": 0.0}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 93.372, "elapsed_wall_s": 230.134, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.274, "clock": 0.046, "odom": 0.061, "scan": 0.187}, "timeout_sim_s": 300.0}
+RESULT 17: OK pose=(-2.20,-3.79)
+COLOR red=0 green=510
+STEP 18: pose=(-2.20,-3.79,1.66) waypoint=(-2.20,-3.20,1.57) free=3055 occupied=354
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 95.462, "elapsed_wall_s": 235.135, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.063, "clock": 0.0, "odom": 0.054, "scan": 0.192}, "timeout_sim_s": 300.0}
+RESULT 18: OK pose=(-2.21,-3.28)
+COLOR red=90 green=976
+STEP 19: pose=(-2.21,-3.28,1.53) waypoint=(-2.20,-2.70,1.57) free=3059 occupied=361
+RESULT 19: OK pose=(-2.20,-2.78)
+COLOR red=0 green=1173
+STEP 20: pose=(-2.20,-2.78,1.58) waypoint=(-2.20,-2.20,1.57) free=3075 occupied=370
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 97.752, "elapsed_wall_s": 240.135, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.126, "clock": 0.0, "odom": 0.005, "scan": 0.167}, "timeout_sim_s": 300.0}
+RESULT 20: OK pose=(-2.20,-2.28)
+COLOR red=0 green=1377
+STEP 21: pose=(-2.20,-2.28,1.57) waypoint=(-2.20,-1.70,1.57) free=3097 occupied=374
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 99.893, "elapsed_wall_s": 245.135, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.093, "clock": 0.001, "odom": 0.005, "scan": 0.237}, "timeout_sim_s": 300.0}
+RESULT 21: OK pose=(-2.20,-1.78)
+COLOR red=0 green=1537
+STEP 22: pose=(-2.20,-1.78,1.57) waypoint=(-2.20,-1.20,1.57) free=3151 occupied=384
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 101.754, "elapsed_wall_s": 250.141, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.039, "clock": 0.022, "odom": 0.057, "scan": 0.136}, "timeout_sim_s": 300.0}
+RESULT 22: OK pose=(-2.20,-1.28)
+COLOR red=0 green=1620
+STEP 23: pose=(-2.20,-1.28,1.57) waypoint=(-2.00,-0.80,1.57) free=3234 occupied=399
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 103.716, "elapsed_wall_s": 255.141, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.005, "clock": 0.001, "odom": 0.026, "scan": 0.079}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 105.934, "elapsed_wall_s": 260.142, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.09, "clock": 0.0, "odom": 0.078, "scan": 0.221}, "timeout_sim_s": 300.0}
+RESULT 23: OK pose=(-2.04,-0.84)
+COLOR red=0 green=1658
+STEP 24: pose=(-2.04,-0.84,1.48) waypoint=(-2.00,-0.30,1.57) free=3311 occupied=416
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 107.908, "elapsed_wall_s": 265.142, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.4, "clock": 0.0, "odom": 0.079, "scan": 0.032}, "timeout_sim_s": 300.0}
+RESULT 24: OK pose=(-2.01,-0.38)
+COLOR red=0 green=848
+STEP 25: pose=(-2.01,-0.38,1.49) waypoint=(-1.80,-0.10,1.57) free=3363 occupied=435
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 110.236, "elapsed_wall_s": 270.142, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.003, "clock": 0.0, "odom": 0.01, "scan": 0.08}, "timeout_sim_s": 300.0}
+RESULT 25: OK pose=(-1.86,-0.14)
+COLOR red=0 green=85
+GATE_PHASE CROSS: aligned with measured opening
+STEP 26: pose=(-1.86,-0.14,1.48) waypoint=(-1.90,0.50,1.57) free=3403 occupied=450
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 112.864, "elapsed_wall_s": 275.143, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.009, "clock": 0.0, "odom": 0.022, "scan": 0.121}, "timeout_sim_s": 300.0}
+RESULT 26: OK pose=(-1.89,0.46)
+COLOR red=0 green=0
+STEP 27: pose=(-1.89,0.46,1.66) waypoint=(-1.80,1.00,1.57) free=3596 occupied=485
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 115.64, "elapsed_wall_s": 280.143, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.117, "clock": 0.001, "odom": 0.004, "scan": 0.144}, "timeout_sim_s": 300.0}
+RESULT 27: OK pose=(-1.83,0.96)
+COLOR red=0 green=0
+STEP 28: pose=(-1.83,0.96,1.48) waypoint=(-1.20,1.00,0.06) free=3832 occupied=518
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 118.408, "elapsed_wall_s": 285.145, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.131, "clock": 0.009, "odom": 0.032, "scan": 0.041}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 121.154, "elapsed_wall_s": 290.145, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.044, "clock": 0.0, "odom": 0.013, "scan": 0.1}, "timeout_sim_s": 300.0}
+RESULT 28: OK pose=(-1.24,1.02)
+COLOR red=590 green=982
+STEP 29: pose=(-1.24,1.02,-0.03) waypoint=(-0.60,1.00,-0.03) free=3915 occupied=528
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 123.787, "elapsed_wall_s": 295.145, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.061, "clock": 0.0, "odom": 0.024, "scan": 0.174}, "timeout_sim_s": 300.0}
+RESULT 29: OK pose=(-0.68,1.00)
+COLOR red=1477 green=80
+STEP 30: pose=(-0.68,1.00,-0.03) waypoint=(-0.20,1.20,0.39) free=4031 occupied=545
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 126.511, "elapsed_wall_s": 300.145, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.099, "clock": 0.0, "odom": 0.039, "scan": 0.011}, "timeout_sim_s": 300.0}
+RESULT 30: OK pose=(-0.23,1.18)
+COLOR red=0 green=0
+STEP 31: pose=(-0.23,1.17,0.48) waypoint=(0.30,1.40,0.40) free=4158 occupied=566
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 129.147, "elapsed_wall_s": 305.146, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.118, "clock": 0.001, "odom": 0.085, "scan": 0.006}, "timeout_sim_s": 300.0}
+RESULT 31: OK pose=(0.23,1.37)
+COLOR red=0 green=0
+STEP 32: pose=(0.23,1.37,0.36) waypoint=(0.70,1.70,0.60) free=4232 occupied=584
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 131.617, "elapsed_wall_s": 310.146, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.135, "clock": 0.0, "odom": 0.005, "scan": 0.06}, "timeout_sim_s": 300.0}
+RESULT 32: OK pose=(0.67,1.67)
+COLOR red=0 green=0
+STEP 33: pose=(0.67,1.67,0.69) waypoint=(1.10,2.10,0.79) free=4351 occupied=602
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 134.199, "elapsed_wall_s": 315.146, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.018, "clock": 0.0, "odom": 0.001, "scan": 0.074}, "timeout_sim_s": 300.0}
+RESULT 33: OK pose=(1.05,2.04)
+COLOR red=0 green=0
+STEP 34: pose=(1.05,2.04,0.85) waypoint=(1.40,2.40,0.80) free=4552 occupied=634
+RESULT 34: OK pose=(1.34,2.35)
+COLOR red=0 green=0
+STEP 35: pose=(1.34,2.35,0.77) waypoint=(1.40,2.70,1.41) free=4720 occupied=661
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 136.86, "elapsed_wall_s": 320.148, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.042, "clock": 0.005, "odom": 0.023, "scan": 0.103}, "timeout_sim_s": 300.0}
+RESULT 35: OK pose=(1.41,2.67)
+COLOR red=0 green=0
+STEP 36: pose=(1.41,2.67,1.50) waypoint=(1.30,3.10,1.81) free=4964 occupied=680
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 139.497, "elapsed_wall_s": 325.148, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.074, "clock": 0.0, "odom": 0.031, "scan": 0.198}, "timeout_sim_s": 300.0}
+RESULT 36: OK pose=(1.32,3.08)
+COLOR red=0 green=0
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 142.186, "elapsed_wall_s": 330.148, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.016, "clock": 0.001, "odom": 0.001, "scan": 0.07}, "timeout_sim_s": 300.0}
+STEP 37: pose=(1.32,3.08,1.90) waypoint=(0.90,3.50,2.35) free=5153 occupied=705
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 144.879, "elapsed_wall_s": 335.148, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.62, "clock": 0.0, "odom": 0.008, "scan": 0.037}, "timeout_sim_s": 300.0}
+RESULT 37: OK pose=(0.93,3.48)
+COLOR red=0 green=0
+STEP 38: pose=(0.94,3.48,2.44) waypoint=(0.50,3.90,2.38) free=5253 occupied=728
+RESULT 38: OK pose=(0.55,3.84)
+COLOR red=0 green=0
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 147.484, "elapsed_wall_s": 340.149, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.072, "clock": 0.001, "odom": 0.029, "scan": 0.207}, "timeout_sim_s": 300.0}
+STEP 39: pose=(0.55,3.84,2.34) waypoint=(0.10,4.30,2.35) free=5343 occupied=754
+
+=== MSML642 HW3 POLICY RESULT ===
+world            : maze_a
+success          : YES
+termination      : success
+time limit       : 300.0 simulation seconds
+path length      : 20.123 m
+wall time        : 340.412 s
+simulation time  : 147.638 s
+average speed    : 0.059 m/s
+green gate       : True
+red violation    : False
+reverse green    : False
+collision        : False
+goal touch       : True
+sensor rates     : {'odom': 12.75, 'scan': 4.34, 'camera': 3.17}
+stale streams    : []
+stream ages      : {'odom': 0.0, 'scan': 0.09, 'camera': 0.032, 'clock': 0.002}
+HW3_EVAL_JSON {"average_wall_speed_mps": 0.059, "collided_with": [], "collision": false, "elapsed_sim_s": 147.638, "elapsed_wall_s": 340.412, "evaluator_error": null, "final_pose": [0.54537, 3.85073, 2.34131], "goal_touch": true, "green_gate_crossed": true, "green_reverse_violation": false, "limitations": ["Success is bounded to this simulator, world, run, and observed ROS streams.", "The report does not establish physical TurtleBot3 safety or real-world success."], "measured_rates_hz": {"camera": 3.17, "odom": 12.75, "scan": 4.34}, "odom_elapsed_sim_s": 147.594, "path_length_m": 20.123, "policy_command": ["python3", "/opt/hw3/reference_demo/run_demo.py", "classical", "--world", "maze_a"], "policy_exit_code": null, "policy_terminated_by_evaluator": true, "red_gate_violation": false, "samples": {"camera": 1079, "clock": 138341, "contact": 275536, "odom": 4342, "scan": 1476}, "schema": "msml642-hw3-policy-evaluation-v1", "scope": "Gazebo simulation trajectory observed through ROS 2", "sensor_diagnostics": {"sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.032, "clock": 0.002, "odom": 0.0, "scan": 0.09}}, "success": true, "termination": "success", "timeout_basis": "simulation", "timeout_sim_s": 300.0, "world": "maze_a"}
+report            : /workspace/reference_classical_maze_a.json

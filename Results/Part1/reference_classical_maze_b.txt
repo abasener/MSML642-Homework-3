@@ -1,0 +1,151 @@
+root@8f1942279d9e:/workspace# python3 /opt/hw3/course_tools/check_interfaces.py
+{
+  "/camera/image_raw": {
+    "bytes": 921600,
+    "encoding": "rgb8",
+    "frame": "camera_rgb_frame",
+    "height": 480,
+    "publishers": 1,
+    "width": 640
+  },
+  "/cmd_vel": {
+    "bridge_subscribers": 1
+  },
+  "/odom": {
+    "child_frame": "base_footprint",
+    "frame": "map",
+    "publishers": 1,
+    "x": -0.0,
+    "y": -4.401
+  },
+  "/scan": {
+    "frame": "base_scan",
+    "publishers": 1,
+    "range_max": 3.5,
+    "range_min": 0.11999999731779099,
+    "samples": 360
+  }
+}
+root@8f1942279d9e:/workspace# python3 /opt/hw3/course_tools/evaluate_policy.py --world maze_b --report /workspace/reference_classical_maze_b.json -- python3 /opt/hw3/reference_demo/run_demo.py classical --world maze_b 2>&1 | tee /workspace/reference_classical_maze_b.log
+HW3_EVAL_BEGIN {"policy_command": ["python3", "/opt/hw3/reference_demo/run_demo.py", "classical", "--world", "maze_b"], "sensor_stale_limit_wall_s": 3.0, "timeout_basis": "simulation", "timeout_sim_s": 300.0, "world": "maze_b"}
+COLOR red=1674 green=1643
+COLOR_ORDER green_side=1
+GATE_CANDIDATE green=(1.79,-2.78) width=0.92
+GATE_CONFIRMED green=(1.78,-2.78) width=0.92 frames=2
+STEP 1: pose=(-0.00,-4.40,1.57) waypoint=(0.50,-4.20,1.57) free=1329 occupied=128
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 2.7, "elapsed_wall_s": 5.0, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.117, "clock": 0.0, "odom": 0.091, "scan": 0.022}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 5.538, "elapsed_wall_s": 10.0, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.106, "clock": 0.001, "odom": 0.042, "scan": 0.052}, "timeout_sim_s": 300.0}
+RESULT 1: OK pose=(0.43,-4.21)
+COLOR red=512 green=2723
+STEP 2: pose=(0.43,-4.21,1.48) waypoint=(0.90,-4.00,1.57) free=1427 occupied=143
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 8.31, "elapsed_wall_s": 15.001, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.591, "clock": 0.001, "odom": 0.083, "scan": 0.027}, "timeout_sim_s": 300.0}
+RESULT 2: OK pose=(0.83,-4.02)
+COLOR red=0 green=2739
+STEP 3: pose=(0.83,-4.02,1.48) waypoint=(1.30,-3.80,1.57) free=1512 occupied=162
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 10.998, "elapsed_wall_s": 20.005, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.341, "clock": 0.051, "odom": 0.093, "scan": 0.189}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 13.572, "elapsed_wall_s": 25.013, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.194, "clock": 0.012, "odom": 0.035, "scan": 0.11}, "timeout_sim_s": 300.0}
+RESULT 3: OK pose=(1.23,-3.82)
+COLOR red=0 green=1946
+STEP 4: pose=(1.23,-3.82,1.48) waypoint=(1.70,-3.40,1.57) free=1582 occupied=179
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 16.278, "elapsed_wall_s": 30.024, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.209, "clock": 0.034, "odom": 0.044, "scan": 0.123}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 18.917, "elapsed_wall_s": 35.024, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.308, "clock": 0.001, "odom": 0.029, "scan": 0.219}, "timeout_sim_s": 300.0}
+RESULT 4: OK pose=(1.64,-3.43)
+COLOR red=0 green=273
+STEP 5: pose=(1.64,-3.43,1.48) waypoint=(1.80,-3.30,1.57) free=1714 occupied=197
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 21.376, "elapsed_wall_s": 40.024, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.103, "clock": 0.001, "odom": 0.013, "scan": 0.163}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 24.063, "elapsed_wall_s": 45.024, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.169, "clock": 0.0, "odom": 0.008, "scan": 0.089}, "timeout_sim_s": 300.0}
+RESULT 5: OK pose=(1.73,-3.33)
+COLOR red=0 green=0
+GATE_PHASE CROSS: aligned with measured opening
+STEP 6: pose=(1.73,-3.33,1.48) waypoint=(1.70,-2.70,1.57) free=1789 occupied=205
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 26.747, "elapsed_wall_s": 50.024, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.133, "clock": 0.0, "odom": 0.009, "scan": 0.075}, "timeout_sim_s": 300.0}
+RESULT 6: OK pose=(1.71,-2.74)
+COLOR red=0 green=0
+STEP 7: pose=(1.71,-2.74,1.66) waypoint=(1.80,-2.20,1.57) free=2098 occupied=225
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 29.337, "elapsed_wall_s": 55.024, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.028, "clock": 0.001, "odom": 0.016, "scan": 0.084}, "timeout_sim_s": 300.0}
+RESULT 7: OK pose=(1.77,-2.24)
+COLOR red=0 green=0
+STEP 8: pose=(1.77,-2.24,1.48) waypoint=(2.10,-1.80,0.93) free=2455 occupied=257
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 32.008, "elapsed_wall_s": 60.024, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.13, "clock": 0.001, "odom": 0.102, "scan": 0.042}, "timeout_sim_s": 300.0}
+RESULT 8: OK pose=(2.06,-1.83)
+COLOR red=0 green=0
+STEP 9: pose=(2.06,-1.82,0.85) waypoint=(2.20,-1.60,1.02) free=2635 occupied=273
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 34.656, "elapsed_wall_s": 65.024, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.001, "clock": 0.0, "odom": 0.038, "scan": 0.046}, "timeout_sim_s": 300.0}
+RESULT 9: OK pose=(2.17,-1.67)
+COLOR red=0 green=0
+STEP 10: pose=(2.17,-1.67,1.08) waypoint=(2.20,-1.10,1.52) free=2748 occupied=285
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 37.331, "elapsed_wall_s": 70.025, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.191, "clock": 0.0, "odom": 0.023, "scan": 0.004}, "timeout_sim_s": 300.0}
+RESULT 10: OK pose=(2.21,-1.13)
+COLOR red=0 green=0
+STEP 11: pose=(2.21,-1.13,1.61) waypoint=(2.20,-0.50,1.59) free=2932 occupied=299
+RESULT 11: OK pose=(2.20,-0.58)
+COLOR red=0 green=0
+STEP 12: pose=(2.20,-0.58,1.58) waypoint=(2.20,0.00,1.57) free=3120 occupied=322
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 40.071, "elapsed_wall_s": 75.025, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.11, "clock": 0.0, "odom": 0.004, "scan": 0.135}, "timeout_sim_s": 300.0}
+RESULT 12: OK pose=(2.20,-0.08)
+COLOR red=0 green=0
+STEP 13: pose=(2.20,-0.08,1.57) waypoint=(1.90,0.50,2.05) free=3300 occupied=340
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 42.813, "elapsed_wall_s": 80.026, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.441, "clock": 0.0, "odom": 0.097, "scan": 0.018}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 45.419, "elapsed_wall_s": 85.026, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.013, "clock": 0.0, "odom": 0.012, "scan": 0.057}, "timeout_sim_s": 300.0}
+RESULT 13: OK pose=(1.93,0.47)
+COLOR red=0 green=0
+STEP 14: pose=(1.93,0.47,2.14) waypoint=(1.80,0.90,1.86) free=3556 occupied=362
+RESULT 14: OK pose=(1.80,0.86)
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 48.171, "elapsed_wall_s": 90.027, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.072, "clock": 0.001, "odom": 0.028, "scan": 0.12}, "timeout_sim_s": 300.0}
+COLOR red=0 green=0
+STEP 15: pose=(1.80,0.86,1.78) waypoint=(1.50,1.10,2.46) free=3734 occupied=381
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 50.868, "elapsed_wall_s": 95.031, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.079, "clock": 0.022, "odom": 0.046, "scan": 0.131}, "timeout_sim_s": 300.0}
+RESULT 15: OK pose=(1.53,1.09)
+COLOR red=0 green=0
+STEP 16: pose=(1.53,1.09,2.55) waypoint=(1.40,1.20,2.45) free=3879 occupied=397
+RESULT 16: OK pose=(1.46,1.15)
+COLOR red=0 green=0
+STEP 17: pose=(1.45,1.15,2.45) waypoint=(1.00,1.50,2.48) free=3936 occupied=411
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 53.403, "elapsed_wall_s": 100.033, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.0, "clock": 0.007, "odom": 0.015, "scan": 0.075}, "timeout_sim_s": 300.0}
+RESULT 17: OK pose=(1.06,1.45)
+COLOR red=0 green=0
+STEP 18: pose=(1.06,1.46,2.50) waypoint=(0.60,1.80,2.50) free=4098 occupied=418
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 56.01, "elapsed_wall_s": 105.035, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.31, "clock": 0.017, "odom": 0.05, "scan": 0.0}, "timeout_sim_s": 300.0}
+RESULT 18: OK pose=(0.66,1.75)
+COLOR red=0 green=0
+STEP 19: pose=(0.66,1.75,2.50) waypoint=(0.40,2.10,2.22) free=4444 occupied=432
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 58.522, "elapsed_wall_s": 110.035, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.184, "clock": 0.0, "odom": 0.029, "scan": 0.008}, "timeout_sim_s": 300.0}
+RESULT 19: OK pose=(0.41,2.06)
+COLOR red=0 green=0
+STEP 20: pose=(0.41,2.06,2.13) waypoint=(0.30,2.20,2.25) free=4738 occupied=457
+RESULT 20: OK pose=(0.35,2.14)
+COLOR red=0 green=0
+STEP 21: pose=(0.35,2.14,2.25) waypoint=(0.20,2.70,1.84) free=4806 occupied=469
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 61.125, "elapsed_wall_s": 115.035, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.001, "clock": 0.0, "odom": 0.014, "scan": 0.047}, "timeout_sim_s": 300.0}
+RESULT 21: OK pose=(0.20,2.65)
+COLOR red=0 green=0
+STEP 22: pose=(0.20,2.66,1.75) waypoint=(0.20,3.30,1.57) free=4893 occupied=503
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 63.814, "elapsed_wall_s": 120.036, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.108, "clock": 0.001, "odom": 0.015, "scan": 0.029}, "timeout_sim_s": 300.0}
+RESULT 22: OK pose=(0.19,3.26)
+COLOR red=0 green=0
+STEP 23: pose=(0.19,3.26,1.48) waypoint=(0.20,3.90,1.55) free=5112 occupied=533
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 66.504, "elapsed_wall_s": 125.042, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.083, "clock": 0.012, "odom": 0.028, "scan": 0.217}, "timeout_sim_s": 300.0}
+RESULT 23: OK pose=(0.20,3.82)
+COLOR red=0 green=0
+STEP 24: pose=(0.20,3.82,1.60) waypoint=(0.00,4.40,1.91) free=5164 occupied=562
+
+=== MSML642 HW3 POLICY RESULT ===
+world            : maze_b
+success          : YES
+termination      : success
+time limit       : 300.0 simulation seconds
+path length      : 10.684 m
+wall time        : 127.986 s
+simulation time  : 68.164 s
+average speed    : 0.083 m/s
+green gate       : True
+red violation    : False
+reverse green    : False
+collision        : False
+goal touch       : True
+sensor rates     : {'odom': 15.66, 'scan': 5.32, 'camera': 4.34}
+stale streams    : []
+stream ages      : {'odom': 0.0, 'scan': 0.096, 'camera': 0.051, 'clock': 0.001}
+HW3_EVAL_JSON {"average_wall_speed_mps": 0.083, "collided_with": [], "collision": false, "elapsed_sim_s": 68.164, "elapsed_wall_s": 127.986, "evaluator_error": null, "final_pose": [0.20369, 3.82805, 1.62244], "goal_touch": true, "green_gate_crossed": true, "green_reverse_violation": false, "limitations": ["Success is bounded to this simulator, world, run, and observed ROS streams.", "The report does not establish physical TurtleBot3 safety or real-world success."], "measured_rates_hz": {"camera": 4.34, "odom": 15.66, "scan": 5.32}, "odom_elapsed_sim_s": 68.136, "path_length_m": 10.684, "policy_command": ["python3", "/opt/hw3/reference_demo/run_demo.py", "classical", "--world", "maze_b"], "policy_exit_code": null, "policy_terminated_by_evaluator": true, "red_gate_violation": false, "samples": {"camera": 556, "clock": 65632, "contact": 130771, "odom": 2005, "scan": 681}, "schema": "msml642-hw3-policy-evaluation-v1", "scope": "Gazebo simulation trajectory observed through ROS 2", "sensor_diagnostics": {"sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.051, "clock": 0.001, "odom": 0.0, "scan": 0.096}}, "success": true, "termination": "success", "timeout_basis": "simulation", "timeout_sim_s": 300.0, "world": "maze_b"}
+report            : /workspace/reference_classical_maze_b.json
+

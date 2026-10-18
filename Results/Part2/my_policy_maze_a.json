@@ -1,0 +1,58 @@
+{
+  "schema": "msml642-hw3-policy-evaluation-v1",
+  "scope": "Gazebo simulation trajectory observed through ROS 2",
+  "world": "maze_a",
+  "policy_command": [
+    "python3",
+    "/workspace/Part2/hw3_policy.py"
+  ],
+  "success": true,
+  "termination": "success",
+  "timeout_basis": "simulation",
+  "timeout_sim_s": 300.0,
+  "elapsed_wall_s": 266.414,
+  "elapsed_sim_s": 81.003,
+  "odom_elapsed_sim_s": 80.988,
+  "sensor_diagnostics": {
+    "stream_age_wall_s": {
+      "odom": 0.0,
+      "scan": 0.097,
+      "camera": 0.269,
+      "clock": 0.049
+    },
+    "stale_streams": [],
+    "sensor_stale_limit_wall_s": 3.0
+  },
+  "evaluator_error": null,
+  "path_length_m": 17.919,
+  "average_wall_speed_mps": 0.067,
+  "final_pose": [
+    0.57706,
+    3.90029,
+    2.6521
+  ],
+  "goal_touch": true,
+  "green_gate_crossed": true,
+  "green_reverse_violation": false,
+  "red_gate_violation": false,
+  "collision": false,
+  "collided_with": [],
+  "policy_exit_code": null,
+  "policy_terminated_by_evaluator": true,
+  "samples": {
+    "odom": 2383,
+    "scan": 810,
+    "camera": 563,
+    "contact": 107030,
+    "clock": 54169
+  },
+  "measured_rates_hz": {
+    "odom": 8.94,
+    "scan": 3.04,
+    "camera": 2.11
+  },
+  "limitations": [
+    "Success is bounded to this simulator, world, run, and observed ROS streams.",
+    "The report does not establish physical TurtleBot3 safety or real-world success."
+  ]
+}

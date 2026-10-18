@@ -1,0 +1,274 @@
+root@d5fd8caef2ec:/workspace# python3 /opt/hw3/course_tools/check_interfaces.py
+{
+  "/camera/image_raw": {
+    "bytes": 921600,
+    "encoding": "rgb8",
+    "frame": "camera_rgb_frame",
+    "height": 480,
+    "publishers": 1,
+    "width": 640
+  },
+  "/cmd_vel": {
+    "bridge_subscribers": 1
+  },
+  "/odom": {
+    "child_frame": "base_footprint",
+    "frame": "map",
+    "publishers": 1,
+    "x": -0.0,
+    "y": -4.401
+  },
+  "/scan": {
+    "frame": "base_scan",
+    "publishers": 1,
+    "range_max": 3.5,
+    "range_min": 0.11999999731779099,
+    "samples": 360
+  }
+}
+root@d5fd8caef2ec:/workspace# python3 /opt/hw3/course_tools/evaluate_policy.py --world maze_b --report /workspace/my_policy_maze_b.json -- python3 /workspace/Part2/hw3_policy.py 2>&1 | tee /workspace/my_policy_maze_b.log
+HW3_EVAL_BEGIN {"policy_command": ["python3", "/workspace/Part2/hw3_policy.py"], "sensor_stale_limit_wall_s": 3.0, "timeout_basis": "simulation", "timeout_sim_s": 300.0, "world": "maze_b"}
+[INFO] [1792284997.589208069] [policy_example]: grid 240x240 cells at 0.05 m
+[INFO] [1792285000.329979699] [policy_example]: ODOM x=-0.00 y=-4.40 yaw=90.0deg frame=map
+[INFO] [1792285000.331384249] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=24 nan=0 front[i=0]=1.66
+[INFO] [1792285000.333730366] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(25, 121, 43) fx=530.5 cx=320.0
+[INFO] [1792285000.526329877] [policy_example]: Color: green=0.286 red=0.286
+[INFO] [1792285000.529416496] [policy_example]: STAMPS image-scan = +0.046s
+[INFO] [1792285000.625809119] [policy_example]: GATE? green count=0 (1 edge cluster(s) so far) | red: 1 edge cluster(s) so far
+[INFO] [1792285000.813371035] [policy_example]: FRONTIER pick (-0.22,-3.57) score=105.73
+[INFO] [1792285000.814524585] [policy_example]: PLAN FRONTIER: -> (-0.22), (-3.57) theta = 105degcorners_left = 1
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 1.621, "elapsed_wall_s": 5.009, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.224, "clock": 0.028, "odom": 0.193, "scan": 0.098}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 3.171, "elapsed_wall_s": 10.014, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 1.395, "clock": 0.008, "odom": 0.023, "scan": 0.105}, "timeout_sim_s": 300.0}
+[INFO] [1792285010.910096364] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285011.128748352] [policy_example]: ODOM x=-0.20 y=-3.61 yaw=110.3deg frame=map
+[INFO] [1792285011.129509204] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=11 nan=0 front[i=0]=0.95
+[INFO] [1792285011.130188542] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(128, 25, 25) fx=530.5 cx=320.0
+[INFO] [1792285011.292613234] [policy_example]: Color: green=0.000 red=0.647
+[INFO] [1792285011.293454306] [policy_example]: STAMPS image-scan = -0.054s
+[INFO] [1792285011.304256283] [policy_example]: GATE? green count=0 (1 edge cluster(s) so far) | red: 1 edge cluster(s) so far
+[INFO] [1792285011.424798272] [policy_example]: FRONTIER pick (1.58,-3.57) score=30.78
+[INFO] [1792285011.425861380] [policy_example]: PLAN FRONTIER: -> (0.79), (-3.59) theta = 1degcorners_left = 1
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 4.879, "elapsed_wall_s": 15.017, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.298, "clock": 0.0, "odom": 0.047, "scan": 0.078}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 6.779, "elapsed_wall_s": 20.018, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.815, "clock": 0.001, "odom": 0.036, "scan": 0.064}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 8.773, "elapsed_wall_s": 25.018, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.341, "clock": 0.0, "odom": 0.05, "scan": 0.049}, "timeout_sim_s": 300.0}
+[INFO] [1792285024.660218202] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285024.928647831] [policy_example]: ODOM x=0.75 y=-3.58 yaw=-3.7deg frame=map
+[INFO] [1792285024.929326306] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=44 nan=0 front[i=0]=2.37
+[INFO] [1792285024.929871150] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(107, 110, 114) fx=530.5 cx=320.0
+[INFO] [1792285025.121025369] [policy_example]: Color: green=0.066 red=0.000
+[INFO] [1792285025.121868693] [policy_example]: STAMPS image-scan = +0.026s
+[INFO] [1792285025.134200572] [policy_example]: GATE? green count=0 (1 edge cluster(s) so far) | red: 1 edge cluster(s) so far
+[INFO] [1792285025.226428346] [policy_example]: FRONTIER pick (1.62,-2.62) score=7.07
+[INFO] [1792285025.228394744] [policy_example]: PLAN FRONTIER: -> (1.57), (-3.01) theta = 35degcorners_left = 3
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 10.502, "elapsed_wall_s": 30.018, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.991, "clock": 0.0, "odom": 0.074, "scan": 0.108}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 12.233, "elapsed_wall_s": 35.028, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.261, "clock": 0.047, "odom": 0.082, "scan": 0.371}, "timeout_sim_s": 300.0}
+[INFO] [1792285036.424886534] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285036.929011291] [policy_example]: ODOM x=1.54 y=-3.04 yaw=39.9deg frame=map
+[INFO] [1792285036.929907448] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=63 nan=0 front[i=0]=2.01
+[INFO] [1792285036.930510819] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(107, 110, 114) fx=530.5 cx=320.0
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 13.949, "elapsed_wall_s": 40.034, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.236, "clock": 0.03, "odom": 0.043, "scan": 0.0}, "timeout_sim_s": 300.0}
+[INFO] [1792285037.107351108] [policy_example]: Color: green=0.233 red=0.000
+[INFO] [1792285037.109603023] [policy_example]: STAMPS image-scan = +0.018s
+[INFO] [1792285037.127228104] [policy_example]: GATE? green count=1 (ok: width 1.30 m) | red: 1 edge cluster(s) so far
+[INFO] [1792285037.134726287] [policy_example]: RECOVERY: escaping to safe cell (1.53, -3.17)
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 15.686, "elapsed_wall_s": 45.035, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.152, "clock": 0.0, "odom": 0.021, "scan": 0.038}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 17.512, "elapsed_wall_s": 50.038, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.011, "clock": 0.0, "odom": 0.006, "scan": 0.139}, "timeout_sim_s": 300.0}
+[INFO] [1792285048.735757479] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285049.930313635] [policy_example]: ODOM x=1.56 y=-3.14 yaw=-102.5deg frame=map
+[INFO] [1792285049.937088901] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=71 nan=0 front[i=0]=2.03
+[INFO] [1792285049.937732865] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(130, 133, 137) fx=530.5 cx=320.0
+[INFO] [1792285050.078294564] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285050.081810020] [policy_example]: STAMPS image-scan = -0.027s
+[INFO] [1792285050.097410474] [policy_example]: GATE? green count=2 (ok: width 1.30 m) | red: 1 edge cluster(s) so far
+[INFO] [1792285050.098466209] [policy_example]: GATE green confirmed: centre (1.58,-2.75) width 1.30 m -> CROSS_GATE
+[INFO] [1792285050.298009952] [policy_example]: PLAN GATE: -> (1.58), (-3.32) theta = -85degcorners_left = 1
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 19.302, "elapsed_wall_s": 55.038, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.004, "clock": 0.002, "odom": 0.07, "scan": 0.147}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 21.209, "elapsed_wall_s": 60.048, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.036, "clock": 0.022, "odom": 0.059, "scan": 0.128}, "timeout_sim_s": 300.0}
+[INFO] [1792285061.539794710] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285061.929300699] [policy_example]: ODOM x=1.53 y=-3.28 yaw=87.3deg frame=map
+[INFO] [1792285061.931511710] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=64 nan=0 front[i=0]=1.71
+[INFO] [1792285061.932388084] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(38, 106, 122) fx=530.5 cx=320.0
+[INFO] [1792285062.054275230] [policy_example]: Color: green=0.142 red=0.000
+[INFO] [1792285062.055022902] [policy_example]: STAMPS image-scan = -0.040s
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 23.062, "elapsed_wall_s": 65.05, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.27, "clock": 0.0, "odom": 0.048, "scan": 0.053}, "timeout_sim_s": 300.0}
+[INFO] [1792285062.121692252] [policy_example]: GATE PASS: -> (1.55,-2.15)
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 25.132, "elapsed_wall_s": 70.052, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.027, "clock": 0.0, "odom": 0.014, "scan": 0.11}, "timeout_sim_s": 300.0}
+[INFO] [1792285068.920879039] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285069.329772359] [policy_example]: ODOM x=1.55 y=-2.23 yaw=89.8deg frame=map
+[INFO] [1792285069.331358464] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=66 nan=0 front[i=0]=0.64
+[INFO] [1792285069.332093248] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(38, 106, 122) fx=530.5 cx=320.0
+[INFO] [1792285069.495728541] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285069.496708702] [policy_example]: STAMPS image-scan = -0.003s
+[INFO] [1792285069.509151873] [policy_example]: GATE crossed -> TO_GOAL (green is now a wall)
+[INFO] [1792285069.576448573] [policy_example]: FRONTIER pick (0.23,-2.32) score=31.93
+[INFO] [1792285069.577631550] [policy_example]: PLAN FRONTIER: -> (0.55), (-2.26) theta = -178degcorners_left = 2
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 26.961, "elapsed_wall_s": 75.058, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.729, "clock": 0.022, "odom": 0.115, "scan": 0.042}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 28.746, "elapsed_wall_s": 80.059, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.282, "clock": 0.0, "odom": 0.109, "scan": 0.022}, "timeout_sim_s": 300.0}
+[INFO] [1792285080.580352157] [policy_example]: Waypoint: status = 4, code=OK
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 30.499, "elapsed_wall_s": 85.063, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.354, "clock": 0.052, "odom": 0.056, "scan": 0.185}, "timeout_sim_s": 300.0}
+[INFO] [1792285082.530081990] [policy_example]: ODOM x=0.63 y=-2.25 yaw=-172.4deg frame=map
+[INFO] [1792285082.534144557] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=88 nan=0 front[i=0]=3.03
+[INFO] [1792285082.535304607] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(169, 36, 36) fx=530.5 cx=320.0
+[INFO] [1792285082.712821162] [policy_example]: Color: green=0.077 red=0.238
+[INFO] [1792285082.714201363] [policy_example]: STAMPS image-scan = +0.016s
+[INFO] [1792285082.815231799] [policy_example]: FRONTIER pick (-0.12,-1.22) score=29.76
+[INFO] [1792285082.816362626] [policy_example]: PLAN FRONTIER: -> (0.04), (-1.44) theta = 126degcorners_left = 1
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 32.3, "elapsed_wall_s": 90.066, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.0, "clock": 0.004, "odom": 0.173, "scan": 0.258}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 34.056, "elapsed_wall_s": 95.067, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.898, "clock": 0.022, "odom": 0.023, "scan": 0.075}, "timeout_sim_s": 300.0}
+[INFO] [1792285094.788811881] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285095.131931779] [policy_example]: ODOM x=0.06 y=-1.49 yaw=121.4deg frame=map
+[INFO] [1792285095.132894044] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=72 nan=0 front[i=0]=inf
+[INFO] [1792285095.133633466] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(142, 145, 150) fx=530.5 cx=320.0
+[INFO] [1792285095.266682203] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285095.268134432] [policy_example]: STAMPS image-scan = +0.004s
+[INFO] [1792285095.463526964] [policy_example]: FRONTIER pick (-0.92,-0.72) score=28.99
+[INFO] [1792285095.464629770] [policy_example]: PLAN FRONTIER: -> (-0.73), (-0.87) theta = 142degcorners_left = 1
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 35.799, "elapsed_wall_s": 100.068, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.467, "clock": 0.001, "odom": 0.054, "scan": 0.124}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 37.4, "elapsed_wall_s": 105.074, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.134, "clock": 0.01, "odom": 0.132, "scan": 0.262}, "timeout_sim_s": 300.0}
+[INFO] [1792285105.746574470] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285106.728959341] [policy_example]: ODOM x=-0.70 y=-0.89 yaw=147.1deg frame=map
+[INFO] [1792285106.729925579] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=75 nan=0 front[i=0]=2.87
+[INFO] [1792285106.730649153] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(142, 145, 150) fx=530.5 cx=320.0
+[INFO] [1792285107.023870180] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285107.024559401] [policy_example]: STAMPS image-scan = -0.001s
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 39.13, "elapsed_wall_s": 110.074, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.543, "clock": 0.003, "odom": 0.0, "scan": 0.268}, "timeout_sim_s": 300.0}
+[INFO] [1792285107.526410628] [policy_example]: FRONTIER pick (-1.12,0.33) score=29.68
+[INFO] [1792285107.529318206] [policy_example]: PLAN FRONTIER: -> (-0.68), (0.11) theta = 89degcorners_left = 2
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 40.946, "elapsed_wall_s": 115.08, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.19, "clock": 0.067, "odom": 0.129, "scan": 0.097}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 42.852, "elapsed_wall_s": 120.081, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.096, "clock": 0.0, "odom": 0.024, "scan": 0.307}, "timeout_sim_s": 300.0}
+[INFO] [1792285119.051349581] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285119.529648312] [policy_example]: ODOM x=-0.69 y=0.07 yaw=84.1deg frame=map
+[INFO] [1792285119.530346061] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=103 nan=0 front[i=0]=inf
+[INFO] [1792285119.530877765] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(107, 110, 114) fx=530.5 cx=320.0
+[INFO] [1792285119.658356900] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285119.659139313] [policy_example]: STAMPS image-scan = +0.085s
+[INFO] [1792285120.181354805] [policy_example]: FRONTIER pick (-1.47,0.28) score=32.29
+[INFO] [1792285120.185061274] [policy_example]: PLAN FRONTIER: -> (-0.97), (0.48) theta = -173degcorners_left = 3
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 44.507, "elapsed_wall_s": 125.086, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.094, "clock": 0.083, "odom": 0.077, "scan": 0.0}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 46.223, "elapsed_wall_s": 130.088, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.127, "clock": 0.032, "odom": 0.07, "scan": 0.208}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 47.833, "elapsed_wall_s": 135.088, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.168, "clock": 0.0, "odom": 0.166, "scan": 0.056}, "timeout_sim_s": 300.0}
+[INFO] [1792285132.158595174] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285132.529003490] [policy_example]: ODOM x=-0.93 y=0.44 yaw=-177.7deg frame=map
+[INFO] [1792285132.529912399] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=91 nan=0 front[i=0]=2.18
+[INFO] [1792285132.530599503] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(143, 146, 151) fx=530.5 cx=320.0
+[INFO] [1792285132.684318231] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285132.684994167] [policy_example]: STAMPS image-scan = -0.025s
+[INFO] [1792285133.029819833] [policy_example]: FRONTIER pick (-2.42,1.12) score=21.68
+[INFO] [1792285133.030986379] [policy_example]: PLAN FRONTIER: -> (-1.84), (0.86) theta = 155degcorners_left = 1
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 49.737, "elapsed_wall_s": 140.089, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.351, "clock": 0.0, "odom": 0.109, "scan": 0.021}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 51.503, "elapsed_wall_s": 145.101, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.814, "clock": 0.059, "odom": 0.083, "scan": 0.161}, "timeout_sim_s": 300.0}
+[INFO] [1792285143.045732599] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285143.330727037] [policy_example]: ODOM x=-1.81 y=0.83 yaw=150.3deg frame=map
+[INFO] [1792285143.337968361] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=96 nan=0 front[i=0]=1.51
+[INFO] [1792285143.347416196] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(142, 145, 150) fx=530.5 cx=320.0
+[INFO] [1792285143.532827630] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285143.533510858] [policy_example]: STAMPS image-scan = -0.031s
+[INFO] [1792285143.824516040] [policy_example]: FRONTIER pick (0.28,1.28) score=24.21
+[INFO] [1792285143.829072383] [policy_example]: PLAN FRONTIER: -> (-0.82), (0.65) theta = -11degcorners_left = 4
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 53.241, "elapsed_wall_s": 150.101, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.973, "clock": 0.001, "odom": 0.155, "scan": 0.04}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 55.176, "elapsed_wall_s": 155.102, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.165, "clock": 0.006, "odom": 0.05, "scan": 0.075}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 56.986, "elapsed_wall_s": 160.104, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.646, "clock": 0.022, "odom": 0.023, "scan": 0.214}, "timeout_sim_s": 300.0}
+[INFO] [1792285159.293265510] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285159.531346570] [policy_example]: ODOM x=-0.86 y=0.66 yaw=-15.2deg frame=map
+[INFO] [1792285159.532111203] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=88 nan=0 front[i=0]=inf
+[INFO] [1792285159.537144645] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(107, 110, 114) fx=530.5 cx=320.0
+[INFO] [1792285159.708494730] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285159.709397905] [policy_example]: STAMPS image-scan = -0.060s
+[INFO] [1792285159.977971384] [policy_example]: FRONTIER pick (0.28,1.28) score=38.81
+[INFO] [1792285159.980954722] [policy_example]: PLAN FRONTIER: -> (-0.17), (0.53) theta = 18degcorners_left = 4
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 58.85, "elapsed_wall_s": 165.107, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.365, "clock": 0.01, "odom": 0.12, "scan": 0.075}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 60.682, "elapsed_wall_s": 170.122, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.199, "clock": 0.022, "odom": 0.052, "scan": 0.125}, "timeout_sim_s": 300.0}
+[INFO] [1792285169.216770808] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285169.929039476] [policy_example]: ODOM x=-0.22 y=0.53 yaw=13.5deg frame=map
+[INFO] [1792285169.930097350] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=106 nan=0 front[i=0]=3.42
+[INFO] [1792285169.930861965] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(107, 110, 114) fx=530.5 cx=320.0
+[INFO] [1792285170.243454702] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285170.244449551] [policy_example]: STAMPS image-scan = +0.069s
+[INFO] [1792285170.687224796] [policy_example]: FRONTIER pick (0.78,1.62) score=28.54
+[INFO] [1792285170.690266104] [policy_example]: PLAN FRONTIER: -> (0.08), (0.58) theta = 54degcorners_left = 3
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 62.556, "elapsed_wall_s": 175.122, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.14, "clock": 0.002, "odom": 0.064, "scan": 0.074}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 64.412, "elapsed_wall_s": 180.123, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.142, "clock": 0.0, "odom": 0.072, "scan": 0.236}, "timeout_sim_s": 300.0}
+[INFO] [1792285178.640584331] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285179.331140530] [policy_example]: ODOM x=0.01 y=0.57 yaw=49.4deg frame=map
+[INFO] [1792285179.332039110] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=99 nan=0 front[i=0]=inf
+[INFO] [1792285179.332740225] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(107, 110, 114) fx=530.5 cx=320.0
+[INFO] [1792285179.467133675] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285179.467840622] [policy_example]: STAMPS image-scan = +0.067s
+[INFO] [1792285179.710515114] [policy_example]: FRONTIER pick (1.43,0.83) score=43.00
+[INFO] [1792285179.715646258] [policy_example]: PLAN FRONTIER: -> (0.90), (1.03) theta = 28degcorners_left = 4
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 66.321, "elapsed_wall_s": 185.123, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.336, "clock": 0.0, "odom": 0.048, "scan": 0.221}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 68.311, "elapsed_wall_s": 190.126, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.101, "clock": 0.0, "odom": 0.008, "scan": 0.23}, "timeout_sim_s": 300.0}
+[INFO] [1792285188.266280797] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285188.929603636] [policy_example]: ODOM x=0.85 y=1.02 yaw=22.7deg frame=map
+[INFO] [1792285188.931145703] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=132 nan=0 front[i=0]=2.44
+[INFO] [1792285188.931936989] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(107, 110, 114) fx=530.5 cx=320.0
+[INFO] [1792285189.168130931] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285189.168959309] [policy_example]: STAMPS image-scan = +0.028s
+[INFO] [1792285189.524735947] [policy_example]: FRONTIER pick (1.58,0.62) score=22.87
+[INFO] [1792285189.526302187] [policy_example]: PLAN FRONTIER: -> (1.03), (1.12) theta = -7degcorners_left = 4
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 70.049, "elapsed_wall_s": 195.126, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.185, "clock": 0.012, "odom": 0.026, "scan": 0.312}, "timeout_sim_s": 300.0}
+[INFO] [1792285196.377056906] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285196.528666770] [policy_example]: ODOM x=1.03 y=1.12 yaw=-2.0deg frame=map
+[INFO] [1792285196.529315549] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=109 nan=0 front[i=0]=2.09
+[INFO] [1792285196.529826180] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(107, 110, 114) fx=530.5 cx=320.0
+[INFO] [1792285196.718591428] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285196.729583121] [policy_example]: STAMPS image-scan = +0.000s
+[INFO] [1792285197.046946900] [policy_example]: PLAN GOAL: -> (0.52), (1.98) theta = 121degcorners_left = 3
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 72.038, "elapsed_wall_s": 200.127, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.12, "clock": 0.001, "odom": 0.113, "scan": 0.044}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 73.963, "elapsed_wall_s": 205.136, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.524, "clock": 0.011, "odom": 0.042, "scan": 0.099}, "timeout_sim_s": 300.0}
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 75.687, "elapsed_wall_s": 210.143, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.277, "clock": 0.0, "odom": 0.015, "scan": 0.116}, "timeout_sim_s": 300.0}
+[INFO] [1792285209.177140967] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285209.528984593] [policy_example]: ODOM x=0.57 y=1.92 yaw=126.1deg frame=map
+[INFO] [1792285209.529957489] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=103 nan=0 front[i=0]=inf
+[INFO] [1792285209.530691807] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(107, 110, 114) fx=530.5 cx=320.0
+[INFO] [1792285209.711590744] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285209.712252281] [policy_example]: STAMPS image-scan = +0.052s
+[INFO] [1792285209.979095694] [policy_example]: PLAN GOAL: -> (0.38), (2.22) theta = 101degcorners_left = 3
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 77.441, "elapsed_wall_s": 215.153, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.116, "clock": 0.054, "odom": 0.085, "scan": 0.296}, "timeout_sim_s": 300.0}
+[INFO] [1792285216.327300524] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285216.730927194] [policy_example]: ODOM x=0.39 y=2.19 yaw=106.2deg frame=map
+[INFO] [1792285216.732975362] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=93 nan=0 front[i=0]=3.03
+[INFO] [1792285216.733823965] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(107, 110, 114) fx=530.5 cx=320.0
+[INFO] [1792285217.038590894] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285217.039429517] [policy_example]: STAMPS image-scan = +0.093s
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 79.321, "elapsed_wall_s": 220.154, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.055, "clock": 0.002, "odom": 0.005, "scan": 0.308}, "timeout_sim_s": 300.0}
+[INFO] [1792285217.414468966] [policy_example]: PLAN GOAL: -> (0.33), (2.53) theta = 90degcorners_left = 2
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 81.201, "elapsed_wall_s": 225.154, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.08, "clock": 0.0, "odom": 0.01, "scan": 0.167}, "timeout_sim_s": 300.0}
+[INFO] [1792285222.444215878] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285222.729326785] [policy_example]: ODOM x=0.33 y=2.48 yaw=94.8deg frame=map
+[INFO] [1792285222.745455409] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=70 nan=0 front[i=0]=2.63
+[INFO] [1792285222.751328721] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(107, 110, 114) fx=530.5 cx=320.0
+[INFO] [1792285223.053700716] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285223.054410940] [policy_example]: STAMPS image-scan = +0.036s
+[INFO] [1792285223.491657320] [policy_example]: PLAN GOAL: -> (0.33), (3.48) theta = 90degcorners_left = 1
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 83.088, "elapsed_wall_s": 230.166, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.187, "clock": 0.014, "odom": 0.064, "scan": 0.086}, "timeout_sim_s": 300.0}
+[INFO] [1792285230.395259823] [policy_example]: Waypoint: status = 4, code=OK
+[INFO] [1792285230.728816228] [policy_example]: ODOM x=0.32 y=3.41 yaw=88.1deg frame=map
+[INFO] [1792285230.736972924] [policy_example]: SCAN n=360 angle_min=0.0 angle_max=359.8 inc=1.00deg inf=57 nan=0 front[i=0]=1.70
+[INFO] [1792285230.737697191] [policy_example]: IMAGE 640x480 enc=rgb8 step=1920 bytes=921600 center_rgb=(107, 110, 114) fx=530.5 cx=320.0
+[INFO] [1792285230.975533707] [policy_example]: Color: green=0.000 red=0.000
+[INFO] [1792285230.976448448] [policy_example]: STAMPS image-scan = -0.060s
+[INFO] [1792285231.348240573] [policy_example]: PLAN GOAL: -> (0.33), (3.93) theta = 90degcorners_left = 1
+HW3_EVAL_PROGRESS {"elapsed_sim_s": 84.868, "elapsed_wall_s": 235.166, "sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.002, "clock": 0.001, "odom": 0.028, "scan": 0.071}, "timeout_sim_s": 300.0}
+
+=== MSML642 HW3 POLICY RESULT ===
+world            : maze_b
+success          : YES
+termination      : success
+time limit       : 300.0 simulation seconds
+path length      : 15.712 m
+wall time        : 238.530 s
+simulation time  : 86.070 s
+average speed    : 0.066 m/s
+green gate       : True
+red violation    : False
+reverse green    : False
+collision        : False
+goal touch       : True
+sensor rates     : {'odom': 10.61, 'scan': 3.61, 'camera': 2.53}
+stale streams    : []
+stream ages      : {'odom': 0.0, 'scan': 0.065, 'camera': 0.003, 'clock': 0.001}
+HW3_EVAL_JSON {"average_wall_speed_mps": 0.066, "collided_with": [], "collision": false, "elapsed_sim_s": 86.07, "elapsed_wall_s": 238.53, "evaluator_error": null, "final_pose": [0.32701, 3.83353, 1.58147], "goal_touch": true, "green_gate_crossed": true, "green_reverse_violation": false, "limitations": ["Success is bounded to this simulator, world, run, and observed ROS streams.", "The report does not establish physical TurtleBot3 safety or real-world success."], "measured_rates_hz": {"camera": 2.53, "odom": 10.61, "scan": 3.61}, "odom_elapsed_sim_s": 86.054, "path_length_m": 15.712, "policy_command": ["python3", "/workspace/Part2/hw3_policy.py"], "policy_exit_code": null, "policy_terminated_by_evaluator": true, "red_gate_violation": false, "samples": {"camera": 605, "clock": 62488, "contact": 123670, "odom": 2532, "scan": 861}, "schema": "msml642-hw3-policy-evaluation-v1", "scope": "Gazebo simulation trajectory observed through ROS 2", "sensor_diagnostics": {"sensor_stale_limit_wall_s": 3.0, "stale_streams": [], "stream_age_wall_s": {"camera": 0.003, "clock": 0.001, "odom": 0.0, "scan": 0.065}}, "success": true, "termination": "success", "timeout_basis": "simulation", "timeout_sim_s": 300.0, "world": "maze_b"}
+report            : /workspace/my_policy_maze_b.json
+root@d5fd8caef2ec:/workspace# 
+
