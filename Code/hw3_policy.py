@@ -30,7 +30,7 @@ from hw3_waypoint.action import DriveToPose
 
 
 # Testing?
-DEBUG_MAP = True
+DEBUG_MAP = False
 TEST_BLOCKED = False # run a test to go stright and get blocked
 #set up
 GOAL_XY = (0.0, 4.4)

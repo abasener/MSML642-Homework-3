@@ -13,11 +13,11 @@ My Part 2 policy is a single ROS 2 node, `code/Part2/hw3_policy.py`. It has clas
 ## File structure
 
 ```
-MSML642_Abigail_Basener_HW3.zip
+MSML642_Abigail_Basener_HW3
 ├── README.md
+├── MSML642_Abigail_Basener_HW3
 ├── code/
-│   └── Part2/
-│       └── hw3_policy.py
+│   └── hw3_policy.py
 └── results/
     ├── part1/
     │   ├── reference_classical_maze_a.json

@@ -10,26 +10,26 @@
   "termination": "success",
   "timeout_basis": "simulation",
   "timeout_sim_s": 300.0,
-  "elapsed_wall_s": 212.83,
-  "elapsed_sim_s": 110.53,
-  "odom_elapsed_sim_s": 110.5,
+  "elapsed_wall_s": 413.112,
+  "elapsed_sim_s": 142.52,
+  "odom_elapsed_sim_s": 142.426,
   "sensor_diagnostics": {
     "stream_age_wall_s": {
       "odom": 0.0,
-      "scan": 0.092,
-      "camera": 0.202,
-      "clock": 0.002
+      "scan": 0.032,
+      "camera": 0.135,
+      "clock": 0.003
     },
     "stale_streams": [],
     "sensor_stale_limit_wall_s": 3.0
   },
   "evaluator_error": null,
-  "path_length_m": 17.674,
-  "average_wall_speed_mps": 0.083,
+  "path_length_m": 22.738,
+  "average_wall_speed_mps": 0.055,
   "final_pose": [
-    0.23202,
-    3.82571,
-    1.6283
+    0.58955,
+    4.4201,
+    2.96312
   ],
   "goal_touch": true,
   "green_gate_crossed": true,
@@ -40,16 +40,16 @@
   "policy_exit_code": null,
   "policy_terminated_by_evaluator": true,
   "samples": {
-    "odom": 3251,
-    "scan": 1105,
-    "camera": 934,
-    "contact": 214364,
-    "clock": 107473
+    "odom": 4190,
+    "scan": 1425,
+    "camera": 962,
+    "contact": 207719,
+    "clock": 104984
   },
   "measured_rates_hz": {
-    "odom": 15.27,
-    "scan": 5.2,
-    "camera": 4.39
+    "odom": 10.14,
+    "scan": 3.45,
+    "camera": 2.33
   },
   "limitations": [
     "Success is bounded to this simulator, world, run, and observed ROS streams.",
